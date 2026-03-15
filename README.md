@@ -1,21 +1,34 @@
-<<<<<<< HEAD
-# React + Vite
+# pluscash.ru — генератор идей для заработка
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ежедневная генерация уникальных идей с помощью Grok AI.
+Автоматическая публикация, бесконечный скролл, тёмная тема.
 
-Currently, two official plugins are available:
+## 🚀 Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend:** React + Vite, CSS Modules
+- **Backend:** Node.js + Express
+- **AI:** Grok API (xAI) через N1N
+- **Инфраструктура:** Ubuntu, Nginx, PM2
 
-## React Compiler
+## ✨ Особенности
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Автоматическая публикация новых идей каждые 6 часов
+- Бесконечный скролл с пагинацией
+- Фильтрация по категориям
+- Сортировка (новые/старые)
+- Тёмная и светлая темы
+- Полностью адаптивный дизайн
 
-## Expanding the ESLint configuration
+## 🛠️ Локальный запуск
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# pluscash
-Новые идеи для заработка каждый день
->>>>>>> 66fe66cd9a3edfd8ac807a0edbaee428918ef49a
+```bash
+npm install
+npm run dev
+
+🌐 Ссылки
+Сайт: https://pluscash.ru
+
+API: https://api.pluscash.ru
+
+📄 Лицензия
+MIT © 2026
