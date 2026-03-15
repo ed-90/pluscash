@@ -1,0 +1,45 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+  /* фиксируем высоту, чтобы не прыгало */
+  min-height: 48px;
+}
+
+.categoryButton {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.18s ease;
+  text-transform: capitalize;
+}
+
+.categoryButton:hover {
+  background: var(--border-color);
+  transform: translateY(-1px);
+}
+
+.categoryButton.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+@media (max-width: 640px) {
+  .filter {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .categoryButton {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}

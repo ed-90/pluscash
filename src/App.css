@@ -1,0 +1,83 @@
+.main {
+  flex: 1;
+  max-width: 920px;
+  margin: 64px auto 80px;
+  padding: 0 20px;
+  width: 100%;
+  overflow-anchor: none; /* отключаем якорение */
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, var(--text-primary), var(--accent) 60%);
+  -webkit-background-clip: text;
+  background-clip: text;           /* ← добавили стандартное свойство */
+  -webkit-text-fill-color: transparent;
+  color: transparent;              /* ← добавили запасной вариант */
+  margin-bottom: 40px;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.ideasCount {
+  text-align: right;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: -20px 0 32px 0;
+}
+
+html {
+  overflow-y: scroll; /* принудительно показываем скроллбар */
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.error {
+  color: #dc2626;
+}
+
+.loading {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.infinite-scroll-component {
+  overflow: visible !important;
+  min-height: 500px; /* принудительная высота */
+}
+
+@media (max-width: 640px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Мобильная версия */
+@media (max-width: 640px) {
+  .main {
+    margin: 40px auto 60px;
+    padding: 0 16px;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}

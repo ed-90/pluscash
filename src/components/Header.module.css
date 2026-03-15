@@ -1,0 +1,35 @@
+.header {
+  background-color: var(--bg-header);
+  padding: 20px 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.logo {
+  width: 240px;  /* или 300px — как захочешь */
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 24px 16px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+}

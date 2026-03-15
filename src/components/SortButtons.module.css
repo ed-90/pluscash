@@ -1,0 +1,40 @@
+.sort {
+  display: flex;
+  gap: 8px;
+}
+
+.sortButton {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.sortButton:hover {
+  background: var(--border-color);
+}
+
+.sortButton.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .sort {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .sortButton {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
